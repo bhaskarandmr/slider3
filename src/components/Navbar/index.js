@@ -10,10 +10,18 @@ export default function Navbars() {
       <Container>
         <Navbar expand="lg">
           <Link to="/">
-            <img src="/image/logo.svg" />
+            <img src="https://stat.dinamalar.com/new/mobile/dmrenglishlogonewdark.png" />
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+              <Link to="/" className="nav-link">
+              செய்திகள்
+              </Link>
+              <Link to="/movies" className="nav-link">
+              தினம் தினம்
+              </Link>
+            </Nav>
             <Form inline>
               <FaSearch />
               <FormControl
@@ -22,14 +30,7 @@ export default function Navbars() {
                 className="mr-sm-2"
               />
             </Form>
-            <Nav className="ml-auto">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-              <Link to="/movies" className="nav-link">
-                TV show
-              </Link>
-            </Nav>
+            
           </Navbar.Collapse>
         </Navbar>
       </Container>
