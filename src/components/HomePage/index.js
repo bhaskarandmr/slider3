@@ -16,7 +16,7 @@ export default function HomePage() {
     let apiKey = "02689249b40636b114a2add6006bff65";
     const allMovies = await Axios.all([
       Axios.get(
-        `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=1`
+        `https://rss.dinamalar.com/internal/newss.php?v=11&api_key=${apiKey}&language=en-US&page=1`
       ),
       Axios.get(
         `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
