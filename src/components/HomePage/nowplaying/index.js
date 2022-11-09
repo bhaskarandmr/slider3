@@ -11,26 +11,32 @@ export default function NowPlaying({ movie }) {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1
+      }
+    }]
   };
   return (
     <Container>
-      <div className="clearfix mt-5 mb-2">
-        <h4 className="float-left">Now Playing</h4>
-        <Link className="float-right text-uppercase" to="/">
-          see all
-        </Link>
+      <div className="clearfix mt-5 mb-2 sm-2">
+        <h6 className="float-left">ஸ்டோரீஸ்...</h6>
+        
       </div>
       <Slider {...settings}>
         {movie.map(function(movie) {
           return (
             <React.Fragment>
-              <Link to={`/movies/${movie.id}`}>
+              <Link>
                 <Col>
                   <Card>
                     <Card.Img
                       variant="top"
-                      src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                      src={`${movie.poster_path}`}
                     />
                     <Card.Body>
                       <span>{movie.title}</span>
