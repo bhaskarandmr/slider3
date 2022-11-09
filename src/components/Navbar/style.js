@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavWrapper = styled.div`
-  background-color: #fdb73b;
+  background-color: #D00D1C;
   font-family: "Poppins", sans-serif;
   form {
     background-color: #fff;
@@ -16,7 +16,12 @@ export const NavWrapper = styled.div`
       box-shadow: none;
     }
   }
+  .form-control {
+
+    width: 91%;
+   
+  }
   .nav-link {
-    color: #000 !important;
+    color: #fff !important;
   }
 `;
