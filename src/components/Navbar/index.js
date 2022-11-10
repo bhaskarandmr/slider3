@@ -16,10 +16,9 @@ export default function Navbars() {
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
               <Link to="/" className="nav-link">
-              செய்திகள்
+            
               </Link>
               <Link to="/movies" className="nav-link">
-              தினம் தினம்
               </Link>
             </Nav>
             <Form inline>
